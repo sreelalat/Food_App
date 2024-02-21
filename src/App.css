@@ -27,6 +27,7 @@
   scroll-behavior: smooth;
   
   -webkit-font-smoothing: antialiased;
+  background-color: #004d76;
   
   }
   
@@ -68,4 +69,6 @@
   
   }
   
-  
+  #Tabs::-webkit-scrollbar {
+      display: none;
+  }
