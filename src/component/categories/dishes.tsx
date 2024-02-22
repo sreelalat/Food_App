@@ -4,7 +4,6 @@ import CountButton from '../../atom/countButton'
 
 const Dishes = (props: any) => {
     const {dish} = props;
-    console.log("index-change",dish)
   return (
     <div className=' border-b border-b-[#2d2f32] mt-5 mx-4 grid-cols-2	grid justify-between pb-4'>
         <div>

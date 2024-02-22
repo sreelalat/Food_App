@@ -8,11 +8,9 @@ const CountButton = (props:any) => {
     const dispatch = useDispatch()
     const cartData = useSelector((state: any) => state.main.cartData)
     const [count, setCount] = useState(0);
-console.log("cartData-test",cartData,count)
     useEffect(()=>{
         if(cartData.length > 0) {
             const dishIndex = cartData.findIndex((dish: any)=>dish.id === item);
-            console.log("dishIndex",cartData,dishIndex,cartData[dishIndex]?.count)
             if(dishIndex !== -1)
                 setCount(cartData[dishIndex]?.count)
             // else{

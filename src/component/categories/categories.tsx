@@ -20,7 +20,6 @@ const Categories = () => {
         setIndex(value)
     }, [activeTab])
 
-    console.log("index", index)
     return (
         <div>
             <div id='Tabs' className='flex overflow-auto w-screen'>
