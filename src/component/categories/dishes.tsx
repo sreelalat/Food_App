@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NonVegIcon, VegIcon } from '../../assets/svg/svgFiles'
 import CountButton from '../../atom/countButton'
 
 const Dishes = (props: any) => {
     const {dish} = props;
+
   return (
     <div className=' border-b border-b-[#2d2f32] mt-5 mx-4 grid-cols-2	grid justify-between pb-4'>
         <div>
@@ -20,7 +21,7 @@ const Dishes = (props: any) => {
                     dish.dish_description
                 }
             </div>
-            <CountButton item={dish.dish_id}/>
+            <CountButton key={dish.dish_id} item={dish.dish_id}/>
             {
                 dish?.addonCat?.length !== 0  &&
                 <div className=' text-[#dd2626] text-sm mt-2.5 ml-0.5'>Customization available</div>

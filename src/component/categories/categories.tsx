@@ -48,7 +48,7 @@ const Categories = () => {
                     {
                         restaurantData[0]?.table_menu_list[index].category_dishes.map((dish: any, index: number) => {
                             return (
-                                <Dishes dish={dish} />
+                                <Dishes key={dish.dish_id} dish={dish} />
                             )
                         })
                     }

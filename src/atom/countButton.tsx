@@ -7,7 +7,10 @@ const CountButton = (props:any) => {
     const {item} = props;
     const dispatch = useDispatch()
     const cartData = useSelector((state: any) => state.main.cartData)
+
     const [count, setCount] = useState(0);
+    // const [index, setIndex] = useState(-1)
+
     useEffect(()=>{
         if(cartData.length > 0) {
             const dishIndex = cartData.findIndex((dish: any)=>dish.id === item);
